@@ -1,15 +1,15 @@
-# Project: Project2
+# Project: TrianguloRetangulo2
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Matriz/main.o
-LINKOBJ  = Matriz/main.o
+OBJ      = PositivoNegativo/main.o
+LINKOBJ  = PositivoNegativo/main.o
 LIBS     = -L"D:/Dev-Cpp/MinGW64/lib" -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = MatrizPar-Impa.exe
+BIN      = TrianguloRetangulo2.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-Matriz/main.o: Matriz/main.cpp
-	$(CPP) -c Matriz/main.cpp -o Matriz/main.o $(CXXFLAGS)
+PositivoNegativo/main.o: PositivoNegativo/main.cpp
+	$(CPP) -c PositivoNegativo/main.cpp -o PositivoNegativo/main.o $(CXXFLAGS)
